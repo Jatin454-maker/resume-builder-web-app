@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #03045e;
+    padding: 30px;
+    color: #000000;
+}
+
+/* MAIN HEADING */
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00b4d8;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.container{
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.input_area{
+    width: 40%;
+    background: #0077b6;
+    padding: 25px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.preview_area{
+    width: 60%;
+    background: #0077b6;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    min-height: 600px;
+    transition: 0.3s;
+}
+
+/* SECTION HEADINGS */
+h2{
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+h3{
+    margin-top: 25px;
+    margin-bottom: 12px;
+    color: #f6f9ff;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 6px;
+}
+
+/* INPUTS */
+.input_area input,
+.input_area textarea{
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+/* INPUT FOCUS */
+.input_area input:focus,
+.input_area textarea:focus{
+    outline: none;
+    border-color: #2563eb;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px rgba(37,99,235,0.3);
+}
+
+/* TEXTAREA */
+textarea{
+    resize: vertical;
+    min-height: 90px;
+}
+
+.all-btn{
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background-color: #00b4d8;
+    color: #03045e;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.all-btn:hover{
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 12px rgba(37,99,235,0.3);
+}
+
+/* PREVIEW TEXT */
+#resume_preview p{
+    margin-bottom: 10px;
+    line-height: 1.7;
+    color: #14213d;
+}
+
+/* NAME */
+#resume_preview h2{
+    color: #caf0f8;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+/* SKILLS */
+#skills_preview ul{
+    padding-left: 20px;
+}
+
+#skills_preview li{
+    margin-bottom: 8px;
+    color: #e7e7e7;
+}
+
+
+/* SMOOTH ANIMATION */
+.form_section,
+.preview_area{
+    animation: fadeIn 0.5s ease;
+}
+
+/* FINAL SAVED RESUME LOOK */
+.saved-resume{
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 1px solid #dbeafe;
+}
+@media(max-width:768px){
+.container{
+flex-direction:column;
+}
+
+.input_area,
+.preview_area{
+width:100%;
+}
+}

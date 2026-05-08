@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Resume Builder Web Application</h1>
+    <div class="container">
+        <!-- INPUT AREA -->
+        <div class="input_area">
+            <h2 id="input_area_heading">Form Filling</h2>
+
+            <!-- PERSONAL DETAILS -->
+            <div class="form_section" id="personal_form">
+                <input type="text" id="full_name" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="text" id="phone" placeholder="Phone Number">
+                <textarea id="address" placeholder="Address"></textarea>
+                <textarea id="summary" placeholder="Profile Summary"></textarea>
+                <button id="add_personal_btn" class="all-btn">Add</button>
+            </div>
+
+            <!-- 2️EDUCATION DETAILS -->
+            <div class="form_section" id="education_form" style="display: none;">
+                <h3>Education Details</h3>
+                <input type="text" id="degree" placeholder="Degree">
+                <input type="text" id="college" placeholder="College / University">
+                <input type="text" id="year" placeholder="Year">
+                <input type="text" id="cgpa" placeholder="Percentage / CGPA">
+                <button id="add_education_btn" class="all-btn">Add</button>
+            </div>
+
+            <!-- 3️EXPERIENCE DETAILS -->
+            <div class="form_section" id="experience_form" style="display: none;">
+                <h3>Experience Details</h3>
+                <input type="text" id="company" placeholder="Company Name">
+                <input type="text" id="role" placeholder="Role">
+                <input type="text" id="duration" placeholder="Duration">
+                <textarea id="experience_desc" placeholder="Description"></textarea>
+                <button id="add_experience_btn" class="all-btn">Add</button>
+            </div>
+
+            <!-- 4️ SKILLS -->
+            <div class="form_section" id="skills_form" style="display: none;">
+                <h3>Skills</h3>
+                <input type="text" id="skills" placeholder="HTML, CSS, JavaScript">
+                <button id="add_skills_btn" class="all-btn">Add</button>
+            </div>
+
+            <!-- 5️ PROJECTS -->
+            <div class="form_section" id="projects_form" style="display: none;">
+                <h3>Projects</h3>
+                <input type="text" id="project_title" placeholder="Project Title">
+                <textarea id="project_desc" placeholder="Project Description"></textarea>
+                <input type="text" id="technologies" placeholder="Technologies Used">
+                <button id="add_project_btn" class="all-btn">Add</button>
+            </div>
+            <button id="final_save_btn" class="all-btn" style="display: none;">
+            Save Resume
+            </button>
+        </div>
+
+        <!-- PREVIEW AREA -->
+        <div class="preview_area">
+            <h2>Resume Preview</h2>
+            <div id="resume_preview">
+                <div id="personal_preview"></div>
+                <div id="education_preview"></div>
+                <div id="experience_preview"></div>
+                <div id="skills_preview"></div>
+                <div id="projects_preview"></div>
+            </div>
+        </div> 
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
