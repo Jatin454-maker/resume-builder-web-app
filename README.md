@@ -70,6 +70,11 @@ This project allows users to create a professional resume dynamically through a 
 
 ---
 
+## 🚀 Live Demo
+
+[![Live Demo](https://jatin454-maker.github.io/resume-builder-web-app/)
+
+---
 ## Author
 
 Jatin
